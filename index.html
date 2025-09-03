@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purna Khadka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Purna Khadka</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input type="search" class="srch" placeholder="Type to search">
+                <button class="btn">Search</button>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text-section">
+                <h1><span>Roshan Khadka</span> Best Man In the World <span>Dev</span></h1>
+                <p class="par">Im just op and op <br>hi i love you</p>
+                <button class="cn"><a href="#">Lets Create</a></button>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>LOGIN <i class="fa-regular fa-user"></i></h2>
+            <input type="email" placeholder="Enter Your email here">
+            <input type="password" placeholder="Enter Your password here">
+            <button class="btnn"><a href="#">LOGIN</a></button>
+
+            <p class="link">Dont have an account? <a href="#">Sign Up </a>here</p>
+            <p class="liw">Log in with</p>
+
+
+            <div class="icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu ul');
+
+        hamburger.addEventListener('click', ()=>{
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
