@@ -1,0 +1,38 @@
+.main{
+        font-size: 20px;
+}
+
+h1 {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+
+ul{
+        list-style: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        transition: 1.3s;
+        margin-bottom: 20px;
+        background-color: rgb(121, 131, 131);
+        overflow: hidden;
+
+}
+
+ul li{
+        float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
