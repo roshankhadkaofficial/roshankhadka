@@ -1,38 +1,196 @@
-.main{
-        font-size: 20px;
-}
-
-h1 {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 10px;
-}
-
-ul{
-        list-style: none;
-        cursor: pointer;
-        padding: 0;
+*{
         margin: 0;
-        gap: 20px;
-        transition: 1.3s;
-        margin-bottom: 20px;
-        background-color: rgb(121, 131, 131);
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body{
+        color: #ededed;
+}
+
+.header {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+        font-size: 25px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 600;
+}
+
+/* Hoover or navigation bar */
+.navbar a {
+        font-size: 18px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+
+}
+
+.navbar a:hover,
+.navbar a:active {
+  background-color: #00abf0;
+}
+
+.home{
+        height: 100vh;
+        background: url('images/roshan.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+}
+
+.home-content{
+        max-width: 600px;
+}
+
+.home-content h1{
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;
+}
+
+.home-content h3{
+        font-size: 32px;
+        font-weight: 700;
+        color: #00abf0;
+}
+
+.home-content p{
+        font-size: 16px;
+        padding: 20px 0 40px;
+}
+
+.home-content .btn-box{
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+}
+
+.btn-box a{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: #00abf0;
+        border: 2px solid #00abf0;
+        border-radius: 8px;
+        font-size: 19px;
+        color: #081b29;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
         overflow: hidden;
+        transition: .5s;
+}
+
+.btn-box a:hover{
+        color: #00abf0;
+}
+
+.btn-box a:nth-child(2){
+        background: transparent;
+        color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover{
+        color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before{
+        background: #00abf0;
+}
+
+.btn-box a::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #081b29;
+        z-index: -1;
+        transition: .5s;
+}
+
+.btn-box a:hover:before{
+        width: 100%;
 
 }
 
-ul li{
-        float: left;
+
+/* Footer  */
+.footer{
+        background-color: #f1f1f1;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+        cursor: pointer;
 }
 
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* contact page form  */
+
+.form{
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+            
 }
 
-ul li a:hover {
-  background-color: #111111;
+
+.formname{
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        height: 30px;
+        
+}
+
+.formemail{
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        height: 30px;
+       
+
+}
+
+
+.formmessagebox{
+        width: 20%;
+        height: 120px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+
+}
+
+.formsubmit{
+        width: 100px;
+        box-sizing: border-box;
+        border-radius: 6px;
+       border: 1px solid #ccc;
+       padding: 10px;
+       margin-top: 10px;
+       cursor: pointer;
 }
