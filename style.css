@@ -138,6 +138,14 @@ body{
 
 
 /* Footer  */
+
+.footerMain{
+        background: transparent;
+
+
+}
+
+
 .footer{
         background-color: #f1f1f1;
         color: rgb(0, 0, 0);
