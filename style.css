@@ -141,28 +141,73 @@ body{
 
 .footerMain{
         background: transparent;
-
+        height: 100%;
+        margin: 0;
+        display: flex;
+        text-decoration: none;
+        text-align: center;
 
 }
 
 
 .footer{
-        background-color: #f1f1f1;
         color: rgb(0, 0, 0);
         text-align: center;
-        padding: 15px;
+        padding: 20px;
         margin-top: 20px;
         cursor: pointer;
 }
 
+
+/* About me Content form */
+
+.aboutme {
+        height: 100vh;
+        background: url('images/roshan.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+}
+
 /* contact page form  */
 
-.form{
-        text-align: left;
-        font-weight: bold;
-        font-size: 16px;
+
+.contact-content{
+        width: 100%;
+        display: flex;
+        height: 60vh;
+        margin-bottom: 30px;
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+}
+
+.contact{
+        height: 100vh;
+        background: url('images/roshan.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
             
 }
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: transparent;
+    border-bottom: 1px solid #00abf0;
+    color: #fff;
+}
+
+.form input:focus{
+    outline: none;
+}
+
 
 
 .formname{
@@ -183,22 +228,41 @@ body{
 }
 
 
-.formmessagebox{
-        width: 20%;
-        height: 120px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        box-sizing: border-box;
-
+.formmessagebox {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  font-size: 16px;
+  text-align: left;         /* aligns text to the left */
+  line-height: 1.5;         /* improves readability */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  resize: vertical;         /* allows user to resize height */
 }
+
 
 .formsubmit{
-        width: 100px;
+        width: 100%;
+          background: #06d6a0;
         box-sizing: border-box;
-        border-radius: 6px;
-       border: 1px solid #ccc;
+        border-radius: 10px;
+       border: none;
        padding: 10px;
-       margin-top: 10px;
+       margin-top: 20px;
        cursor: pointer;
+       transition: .3s;
 }
+
+.formsubmit:hover{
+        background: linear-gradient(90deg, #06d6a0, #ef476f);
+        color: #fff;
+
+}
+
+.formsubmit a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
